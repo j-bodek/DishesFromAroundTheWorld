@@ -1,7 +1,7 @@
 import * as map from "./view/map.js";
 import RenderModal from "./view/renderModal.js";
 import * as getCountryData from "./getCountryData.js";
-import ModalView from "./view/ModalView.js";
+import ModalView from "./view/modalView.js";
 
 const generateModal = async function (id) {
   console.log(id);
