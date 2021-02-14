@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/aos.css" /> -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+
+    <!-- LEEFLET LIBRARY -->
+    <!-- It has to be before our code -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <!-- Script.js has access to script from leaflet but scrit from leaflet didn't -->
+    <!-- <script defer src="js/view/map.js"></script> -->
+    <script defer type='module' src="js/controller.js"></script>
+    <title>Meals Travel</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <!-- <img src="logo.png" alt="Logo" class="logo" /> -->
+      <h1 data-aos="fade-up" class="sidebar-title">
+        Welcome in your culinary travel around the WORLD 🌐
+      </h1>
+
+      <ul class="results">
+
+      </ul>
+
+      <!-- <a href="#popup-art" class="open-popup">open popup</a> -->
+  </div>
+
+
+  <!-- MAP -->
+  <div id="map"></div>
+    </div>
+
+    <!-- POP UP -->
+
+    <div class="popup popup-hidden">
+      <div class="popup__container">
+        <a href="#" class="popup__close">
+          <span class="screen-reader">close</span>
+        </a>  
+        <div class="popup__content">
+         
+          <!-- HERO -->
+          <section
+            class="hero hero-bg d-flex justify-content-center align-items-center"
+          >
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div class="hero-text">
+                    <h1 class="popup__h1" data-aos="fade-up">
+                      
+                    </h1>
+                  </div>
+                </div>
+    
+                <div class="col-lg-6 col-12">
+                  <div
+                    class="hero-image"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    style="border-radius: 100%"
+                  >
+                    <img
+                      src="https://www.themealdb.com/images/media/meals/st1ifa1583267248.jpg"
+                      class="img-fluid"
+                      alt="working girl"
+                      style="opacity: 0"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+          <!-- ABOUT -->
+          <section class="about section-padding pb-0" id="about">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7 mx-auto col-md-10 col-12">
+                  <div class="about-info">
+                    <h2 class="mb-4" data-aos="fade-up">
+                      RECIPE <strong>INGREDIENTS</strong>
+                    </h2>
+    
+                    <ol class="gradient-list" data-aos="fade-up">
+                      
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+          <!-- Prepare  -->
+          <section
+            class="about section-padding pb-0"
+            style="margin-top: 10%; margin-bottom: 10%"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7 mx-auto col-md-10 col-12">
+                  <div class="about-info">
+                    <h2 class="mb-4" data-aos="fade-up">
+                      MEAL <strong>PREPARING</strong>
+                    </h2>
+    
+                    <p class="mb-0 instruction" data-aos="fade-up">
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+          <!-- Video -->
+
+        
+      </div>
+      </div>
+
+    <!-- This is div where leaflet map will be displayed -->
+    <div id="map"></div>
+
+    <script type="text/javascript" src="js/view/countries.js"></script>
+
+
+
+
+
+
+        <!-- SCRIPTS -->
+        <script src="js/view/jquery.min.js"></script>
+        <!-- <script src="js/view/bootstrap.min.js"></script> -->
+        <!-- <script src="js/view/aos.js"></script> -->
+   
+        <!-- <script src="js/view/custom.js"></script> -->
+  </body>
+</html>
